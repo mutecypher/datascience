@@ -19,7 +19,7 @@ arctic <- function(x)
         }
         bb <- aa[aa$X2014 > 0,]
         bb <- bb[bb$X2015 > 0,]
-        bb <- mutate(bb, X2015 > 0 , new = 100*X2015/ X2014 - 100)
+        bb <- mutate(bb, X2016 > 0 , new = 100*X2015/ X2014 - 100)
         dateDownloaded <- date()
         par(mfrow = c(1,1) ,mar = c(4,4,4,2))
         plot(as.integer(rownames(bb)), bb$new, xlab = "days from start of year", ylab = "percent more than 2013", main = dateDownloaded)
