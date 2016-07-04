@@ -1,0 +1,10 @@
+# Knitr document
+Mike Pearson
+
+## Here is the code
+
+```{r, echo = FALSE}
+set.seed(2121)
+x <- 2 + rnorm(100)
+mean(x)
+```
